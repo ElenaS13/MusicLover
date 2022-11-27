@@ -10,12 +10,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserProfileController {
 
         @RequestMapping("/profile")
         public String displayUserProfile() {
             return "user-profile";
+        }
+
+        @RequestMapping("/new")
+        public String createNewUser(Model model) {
+            User aUser = new User();
+            model.addAttribute("userAttr", aUser);
+
+            return "new-user";
         }
 
 
