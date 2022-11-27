@@ -1,4 +1,4 @@
-package com.musiclover.musiclover;
+package com.finalClassProject.musiclover;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

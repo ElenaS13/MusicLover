@@ -1,3 +1,9 @@
+package com.finalClassProject.musiclover.entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="users")
 public class User{
 
 
