@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+
+<div class="container">
+    <form action="/users/save" th:object="${userAttr}" method="POST">
+        <div class="panel-heading">
+            <strong>Sign up for Music Lover here</strong>
+        </div>
+
+        <div class="input-group">
+            <input ng-model="firstName" id="firstName" name="firstName" placeholder="First name"
+                   class="form-control" type="text"  minlength="2"
+                   maxlength="50">
+        </div>
+
+        <div class="input-group">
+            <input ng-model="lastName" id="lastName" name="lastName" placeholder="Last name"
+                   class="form-control" type="text" minlength="2"
+                   maxlength="50">
+        </div>
+
+        <div class="input-group">
+
+            <input ng-model="username" class="form-control" id="email" name="email"
+                   placeholder="E-mail" type="email"  minlength="5"
+                   maxlength="50"/>
+        </div>
+
+        <div class="input-group">
+            <input ng-model="password" id="password" name="password" placeholder="Password"
+                   class="form-control" type="password" minlength="50"
+                   maxlength="100">
+        </div>
+
+        <div class="input-group">
+            <input ng-model="confirmPassword" class="form-control" id="confirmPassword" name="confirmPassword"
+                   placeholder="Confirm password" type="password" required
+                   minlength="50" maxlength="100"/>
+        </div>
+
+        <div class="panel-footer" align="center">Current User?
+            <a href="#/login">Login Here</a>
+        </div>
+
+
+    </form>>
+</div>
+</html>
