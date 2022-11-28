@@ -20,34 +20,33 @@
         <div class="panel-heading">
             <strong>Sign up for Music Lover here</strong>
         </div>
-
         <div class="input-group">
-            <input ng-model="firstName" id="firstName" name="firstName" placeholder="First name"
+            <input ng-model="firstName" id="firstName" name="firstName" th:field="${userAttr.firstName}" placeholder="First name"
                    class="form-control" type="text"  minlength="2"
                    maxlength="50">
         </div>
 
         <div class="input-group">
-            <input ng-model="lastName" id="lastName" name="lastName" placeholder="Last name"
+            <input ng-model="lastName" id="lastName" name="lastName" th:field="${userAttr.lastName}" placeholder="Last name"
                    class="form-control" type="text" minlength="2"
                    maxlength="50">
         </div>
 
         <div class="input-group">
 
-            <input ng-model="username" class="form-control" id="email" name="email"
+            <input ng-model="username" class="form-control" id="email" th:field="${userAttr.email}" name="email"
                    placeholder="E-mail" type="email"  minlength="5"
                    maxlength="50"/>
         </div>
 
         <div class="input-group">
-            <input ng-model="password" id="password" name="password" placeholder="Password"
+            <input ng-model="password" id="password" name="password" th:field="${userAttr.password}" placeholder="Password"
                    class="form-control" type="password" minlength="50"
                    maxlength="100">
         </div>
 
         <div class="input-group">
-            <input ng-model="confirmPassword" class="form-control" id="confirmPassword" name="confirmPassword"
+            <input ng-model="confirmPassword" class="form-control" id="confirmPassword" th:field="${userAttr.password}" name="confirmPassword"
                    placeholder="Confirm password" type="password" required
                    minlength="50" maxlength="100"/>
         </div>
